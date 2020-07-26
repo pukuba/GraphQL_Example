@@ -13,6 +13,6 @@ module.exports = {
             type: args.type
         }]
         await db.collection('post').insertMany(post)
-        return true
+        return post[0]
     }
 }
