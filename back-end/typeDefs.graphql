@@ -1,0 +1,16 @@
+type Post{
+    author:String
+    title:String
+    content:String
+    id:Int
+    date:String
+}
+
+type Query{
+    top10: [Post]
+    getPost(id:Int): Post
+}
+
+type Mutation{
+    create(author:String,title:String,content:String): Boolean
+}
